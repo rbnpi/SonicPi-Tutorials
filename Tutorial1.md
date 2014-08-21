@@ -20,8 +20,8 @@ play chord(:c4,:major)
 puts chord(:c4,:major)
 ```
 You will hear the two chords, which sound identical, and if you look at the output pane, you will see [60, 64, 67] in blue type. This is produced by the puts command which asks Sonic-Pi to print what follows, in this case chord(:c4,:major) and the result is a list of three numbers, separated by commas inside square brackets.
-This is same way that the first play_chord specified the notes to be played, but we see the equivalent midi-note numbers corresponding to the symbols :c4, :e4 and :g4
-We can in fact ask Sonic_pi to do the conversion for us explicitly by adding 3 further lines to get:
+This is the same way that the first play_chord specified the notes to be played, but we see the equivalent midi-note numbers corresponding to the symbols :c4, :e4 and :g4
+We can in fact ask Sonic_Pi to do the conversion for us explicitly by adding 3 further lines to get:
 ```Ruby
 play_chord [:c4, :e4, :g4]
 sleep 1
